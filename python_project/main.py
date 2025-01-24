@@ -46,7 +46,7 @@ crutch = 0 # Наверняка можно было лучше оптимизи�
 while crutch != "Твой покемон проиграл":
     
     try:
-        # Ищем суппостата
+        # Ищем супостата
         response = requests.get(url= f'{url}/pokemons?=in_pokeball=1&status=1', headers= header)
 
         for i in range(len(response.json()['data'])):
